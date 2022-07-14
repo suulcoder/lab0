@@ -155,39 +155,6 @@ class Main inherits IO {
       {
          avar <- (new A);
          avar.set_var(2);
-         out_int(avar.value());
-         
-         if is_even(avar.value()) then
-	          out_string(" es par!\n")
-	     else
-	          out_string(" es impar!\n")
-	     fi;
-	     
-         a_var <- (new A).set_var(3);
-	     avar <- (new B).method2(avar.value(), a_var.value());
-         out_int(avar.value());
-         out_string("\n");
-         
-         
-         avar <- (new C).method6(avar.value());
-         out_int(avar.value());
-         out_string("\n");
-        
-         a_var <- (new A).set_var(5);
-         avar <- (new D).method4(avar.value(), a_var.value());
-         out_int(avar.value());
-         out_string("\n");
-        
-         avar.set_var(5);
-         avar <- (new C)@A.method5(avar.value());
-         out_int(avar.value());
-         out_string("\n");
-      	 
-         avar.set_var(6);
-         avar <- (new C)@B.method5(avar.value());
-         out_int(avar.value());
-         out_string("\n");
-
       }
    };
 
